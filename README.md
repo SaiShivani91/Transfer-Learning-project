@@ -2,7 +2,7 @@
 
 This project focuses on classifying images of dogs and cats using transfer learning. Transfer learning involves pre-trained models to solve new tasks, reducing the need for large datasets and extensive training.
 
-# Tools and Technologies:
+## Tools and Technologies:
 
 - Python: Scripting and model building.
 - Kaggle API: Downloading the dataset.
@@ -13,7 +13,7 @@ This project focuses on classifying images of dogs and cats using transfer learn
 - Scikit-learn: Data splitting and preprocessing.
 - Google Colab: Execution environment with GPU access.
 
-# Transfer Learning
+## Transfer Learning:
 
 Transfer learning involves using a model trained for one task as the starting point for a model on a second task. It is beneficial because it saves computational resources and achieves higher accuracy with smaller datasets.
 
@@ -25,7 +25,7 @@ There are several pretrained models used for different tasks such as:
 - MobileNet V2: Lightweight and suitable for mobile and embedded vision applications.
 - YOLO (You Only Look Once): Used for real-time object detection.
 
-# Workflow
+## Workflow:
 
 1. Dataset Acquisition: Using the Kaggle API to download the dog vs. cat dataset.
 2. Image Processing: Resizing and normalizing images to fit the input requirements of the MobileNet V2 model.
@@ -33,7 +33,7 @@ There are several pretrained models used for different tasks such as:
 4. Model Selection and Training: Using MobileNet V2 for transfer learning.
 5. Prediction: Predicting whether an image is of a dog or a cat.
 
-# Dataset
+## Dataset:
 
 The dataset used in this project is sourced from Kaggle's "Dogs vs. Cats" competition. It contains 25,000 images labeled as either dogs or cats. For this project, a subset of 2,000 images was used to train and evaluate the model. Images are resized to 224x224 pixels to match the input size required by MobileNet V2.
 
@@ -41,7 +41,7 @@ MobileNet V2
 
 MobileNet V2 is a lightweight and efficient model designed for mobile and embedded vision applications. It is trained on the ImageNet dataset, which contains millions of images across thousands of classes. MobileNet V2 uses depthwise separable convolutions, significantly reducing the number of parameters and computation while maintaining performance.
 
-# Finetuning
+## Finetuning:
 
 Loading the Pre-trained Model: MobileNet V2 is loaded with pre-trained weights from TensorFlow Hub.
 
@@ -53,11 +53,11 @@ Compiling the Model: The model is compiled with the Adam optimizer and sparse ca
 
 Training the Model: The model is trained on the resized and normalized images for a few epochs.
 
-# Model Performance
+## Model Performance:
 
 The trained model achieved a test loss of 0.0624 and a test accuracy of 97%. This high accuracy demonstrates the effectiveness of transfer learning with MobileNet V2 for this classification task.
 
-# Alternative Models
+## Alternative Models:
 
 While MobileNet V2 is an excellent choice for this project due to its efficiency and performance, several other pre-trained models could also be used:
 
@@ -66,6 +66,6 @@ While MobileNet V2 is an excellent choice for this project due to its efficiency
 - Inceptionv3: Offers high performance for complex image recognition tasks.
 - DenseNet: Known for its ability to build very deep networks efficiently.
 
-# Conclusion
+## Conclusion:
 
 This project successfully demonstrates the use of transfer learning with MobileNet V2 for classifying images of dogs and cats. Transfer learning significantly reduces training time and improves accuracy by leveraging pre-trained models. For similar projects, models like VGG-16, ResNet50, Inceptionv3, and DenseNet can also be considered as effective alternatives.
